@@ -70,7 +70,13 @@ for($i=0;$i<count($laModulos);$i++)
         <?php
         if($registrar)
         {
-            echo '<a class="btn btn-success" id="btn_registrar" href="?vista=inv_bienesnacionales/registrar_articulobn"><i class="icon-plus icon-white"></i> Agregar Articulo</a>';
+            echo ('
+              <a class="btn btn-primary" id="btn_registrar" href="?vista=inv_bienesnacionales/recepcion_articulobn"><i class="icon-calendar icon-white"></i> Períodos</a>
+              <a class="btn btn-success" id="btn_registrar" href="?vista=inv_bienesnacionales/recepcion_articulobn"><i class="icon-lock icon-white"></i> Asignación de BN</a>
+              <a class="btn btn-success" id="btn_registrar" href="?vista=inv_bienesnacionales/recepcion_articulobn"><i class="icon-plus icon-white"></i> Recepción de BN</a>
+              <a class="btn btn-warning" id="btn_registrar" href="?vista=inv_bienesnacionales/recepcion_articulobn"><i class="icon-arrow-left icon-white"></i> Devolución de BN</a>
+              <a class="btn btn-danger" id="btn_registrar" href="?vista=inv_bienesnacionales/recepcion_articulobn"><i class="icon-minus icon-white"></i> Desincorporación de BN</a>
+              ');
         }
         ?>
         <table class="table table-striped table-hover table-bordered bootstrap-datatable datatable dataTable" id="filtro">

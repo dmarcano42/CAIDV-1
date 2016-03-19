@@ -260,21 +260,25 @@ margin: 0 auto;">
     <script>
     // single keys
         Mousetrap.bind('ctrl+g', function(){ alert(1); });
-        function SoloNumeros(e){
-        var tecla = (document.all) ? e.keyCode : e.which;
-        if((tecla==8)||(tecla==0))return true;
-        patron = /[1234567890]/;
-        te = String.fromCharCode(tecla);
-        return patron.test(te);
+        function SoloNumeros(e)
+        {
+            var tecla = (document.all) ? e.keyCode : e.which;
+            if((tecla==8)||(tecla==0))return true;
+            patron = /[1234567890]/;
+            te = String.fromCharCode(tecla);
+            return patron.test(te);
         
-    }
-    function SoloAlfaNumerico(e){
-    var tecla = (document.all) ? e.keyCode : e.which;
-    if((tecla==8)||(tecla==0))return true;
-    patron = /[A-ZáéíóúÁÉÍÓÚa-zñÑ\s1234567890,.]/;
-    te = String.fromCharCode(tecla);
-    return patron.test(te);
-}
+        }
+
+        function SoloAlfaNumerico(e)
+        {
+            var tecla = (document.all) ? e.keyCode : e.which;
+            if((tecla==8)||(tecla==0))return true;
+            patron = /[A-ZáéíóúÁÉÍÓÚa-zñÑ\s1234567890,.]/;
+            te = String.fromCharCode(tecla);
+            return patron.test(te);
+        }
+        
     </script>
 </html>
 
